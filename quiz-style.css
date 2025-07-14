@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0faff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.quiz-header {
+  background-color: #caf0f8;
+  padding: 20px;
+}
+
+.quiz-logo {
+  height: 60px;
+}
+
+.quiz-intro {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.quiz-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+}
+
+.bear-mascot {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.age-popup {
+  background-color: #ffffff;
+  border: 3px solid #90e0ef;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+.question-box {
+  background-color: #ffffff;
+  border: 2px solid #00b4d8;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+#resultBox {
+  background-color: #d8f3dc;
+  padding: 20px;
+  border: 2px solid #38b000;
+  border-radius: 12px;
+  margin-top: 20px;
+  animation: popUp 0.7s ease;
+}
+
+@keyframes popUp {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}

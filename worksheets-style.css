@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fef6e4;
+  color: #1f1f1f;
+}
+
+.ws-header {
+  background-color: #ffb703;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.ws-logo {
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  background-color: #023047;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.worksheet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.worksheet-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.worksheet-card:hover {
+  transform: translateY(-5px);
+}
+
+.worksheet-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #219ebc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #126782;
+}
+
+.mascot-wrapup {
+  margin-top: 60px;
+  background-color: #e1f5fe;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 4px solid #ffb703;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.bear {
+  font-size: 60px;
+  animation: wave 2s infinite;
+}
+
+.bear-message h2 {
+  color: #023047;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bear-message p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 10px auto;
+  color: #37474f;
+  line-height: 1.6;
+}
+
+.bear-signoff {
+  font-style: italic;
+  color: #00695c;
+  margin-top: 20px;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-8deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}

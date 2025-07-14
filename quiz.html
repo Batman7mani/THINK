@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THINKIT Quiz</title>
+  <link rel="stylesheet" href="quiz-style.css" />
+</head>
+<body>
+
+  <header class="quiz-header">
+    <img src="logo.png" class="quiz-logo" />
+    <h1>🧠 THINKIT Quiz Challenge</h1>
+    <p class="quiz-intro">Boost your brain, Thinker! Let’s test your skills.</p>
+  </header>
+
+  <main class="quiz-container">
+
+    <!-- Age Popup -->
+    <div class="age-popup" id="agePopup">
+      <h2>🎉 Welcome, Thinker!</h2>
+      <p>Choose your age group:</p>
+      <button onclick="startQuiz('under10')">Under 10</button>
+      <button onclick="startQuiz('above10')">11 and above</button>
+    </div>
+
+    <!-- Mascot Intro -->
+    <div class="mascot-intro hidden" id="mascotIntro">
+      <img src="animated-bear-dancing-xm4258py14d9arkl.gif" alt="Bear Mascot" class="bear-mascot" />
+      <p>Hello smart thinker! 🐻 I’ll be with you through this fun quiz!<br>Let’s start and good luck! 🍀</p>
+    </div>
+
+    <!-- Quiz Form -->
+    <form id="quizForm" class="hidden">
+      <div id="questionsContainer"></div>
+      <button type="submit" id="submitBtn">Submit Quiz</button>
+    </form>
+
+    <!-- Result Box -->
+    <div id="resultBox" class="hidden">
+      <img src="animated-bear-dancing-xm4258py14d9arkl.gif" alt="Bear Mascot" class="bear-mascot" />
+      <p id="resultMessage"></p>
+    </div>
+
+    <button id="startBtn">🚀 Take the Test</button>
+
+  </main>
+
+  <script src="quiz-script.js"></script>
+</body>
+</html>
