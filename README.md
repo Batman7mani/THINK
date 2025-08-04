@@ -45,7 +45,7 @@ This project was created to:
 ## Live Project
 
 You can view and interact with the live version of THINKIT here:  
-**[https://proj-thinki.netlify.app](https://proj-thinki.netlify.app)**
+**[THINK](https://thinkpro.netlify.app/)**
 
 ## Future Improvements
 
